@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Funktionsverbgefüge – Grammatikübungen C1</title>
+<style>
+:root{--bg:#fafaf8;--ink:#222;--soft:#666;--card:#fff;--line:#ddd;--acc:#1a5fb4;--fld:#fffef6;--ok:#1b7a3d;--okbg:#eaf6ee}
+@media (prefers-color-scheme:dark){:root{--bg:#161616;--ink:#eee;--soft:#aaa;--card:#222;--line:#444;--acc:#7ab0ff;--fld:#2a2a22;--ok:#6fd392;--okbg:#1c2a21}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,sans-serif;padding:16px}
+main{max-width:860px;margin:0 auto}
+a{color:var(--acc)}
+h1{font-size:26px;margin:0 0 4px}
+.sub{color:var(--soft);font-size:14px;margin-bottom:12px}
+.top{margin-bottom:10px;font-size:14px}
+.ex{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:14px 0}
+.head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:4px}
+.ex h3{font-size:17px;margin:0}
+.chk{font:inherit;font-size:14px;padding:4px 14px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);cursor:pointer;flex:none}
+.btns{display:flex;gap:8px;flex:none}
+.chk:hover{border-color:var(--acc);color:var(--acc)}
+.instr{margin:0 0 6px;font-weight:500}
+.hint{margin:0 0 6px;color:var(--soft);font-size:14px}
+.bank{margin:0 0 8px;padding:6px 10px;border:1px dashed var(--line);border-radius:6px;font-size:14px}
+.bsp{margin:0 0 10px;padding:6px 10px;background:var(--bg);border-left:3px solid var(--acc);font-size:14.5px;white-space:pre-line}
+ol{list-style:none;margin:0;padding:0}
+li{display:flex;gap:8px;padding:6px 0;border-top:1px solid var(--line);align-items:baseline}
+li:first-child{border-top:0}
+.l{flex:0 0 1.6em;color:var(--soft);font-weight:600}
+.body{flex:1;min-width:0}
+.q{margin-bottom:3px}
+input.f{font:inherit;color:var(--ink);background:var(--fld);border:0;border-bottom:1.5px solid var(--soft);padding:1px 4px;min-width:0}
+input.f:focus{outline:0;border-bottom-color:var(--acc);background:var(--bg)}
+input.full{display:block;width:100%}
+input.s{width:7em}input.m{width:13em}input.w{width:22em;max-width:100%}
+.sol{display:none;margin-top:4px;padding:4px 10px;background:var(--okbg);border-left:3px solid var(--ok);color:var(--ok);font-size:15px;white-space:pre-line}
+.ex.show li.filled .sol{display:block}
+.pager{display:flex;justify-content:space-between;margin:28px 0 8px;font-size:15px}
+.idx a{display:block;padding:10px 14px;margin:8px 0;background:var(--card);border:1px solid var(--line);border-radius:8px;text-decoration:none;color:var(--ink)}
+.idx a:hover{border-color:var(--acc);color:var(--acc)}
+.idx small{color:var(--soft);margin-left:8px}
+@media print{.chk,.top,.pager{display:none}.sol{display:none!important}.ex{break-inside:avoid}body{background:#fff;color:#000}input.f{background:#fff}}
+</style></head><body><main>
+<div class="top"><a href="index.html">← Übersicht</a></div>
+<h1>Funktionsverbgefüge</h1>
+<div class="sub">Grammatikübungen C1. „Check“ zeigt eine Lösung unter jeder Antwort. Die Lösungen sind selbst erstellt, nicht aus dem Buch. Bei offenen Aufgaben sind auch andere richtige Antworten möglich. Antworten werden im Browser gespeichert.</div>
+<div id="root"></div>
+<div class="pager"><a href="02-trennbare-und-untrennbare-verben.html">← Trennbare und untrennbare Verben</a><a href="04-modalverben.html">Modalverben →</a></div>
+</main>
+<script>
+const C={"id":"fvg","name":"Funktionsverbgefüge","ex":[{"t":"Übung 1","i":"Ergänzen Sie die Nomen.","items":["An Ihrer Stelle würde ich mit solchen Leuten kein ___ abschließen.","Diese Angelegenheit ist vertraulich. Ich kann Ihnen dazu keine ___ erteilen.","Er wollte sie nicht alleine lassen, sondern ihr ___ leisten.","Man muss wirklich so bald wie möglich eine ___ treffen.","Das kann so nicht bleiben, da müssen wir auf alle Fälle eine ___ vornehmen.","Bevor der Bau begonnen wird, muss man noch einige ___ anstellen.","Durch einen Putsch konnte er die ___ ergreifen.","Der Forscher konnte für sein Projekt keine ___ finden."],"bank":"Auskunft - Berechnungen - Unterstützung - Entscheidung - Macht - Gesellschaft - Geschäft - Korrektur","sol":["Geschäft","Auskunft","Gesellschaft","Entscheidung","Korrektur","Berechnungen","Macht","Unterstützung"]},{"t":"Übung 2","i":"Ergänzen Sie die Präpositionen.","items":["Wer ist Ihnen ___ Hilfe gekommen?","Sie sollten sich mal ___ meine Lage versetzen.","Das ist ganz sicher, das steht ___ Zweifel.","Wir sollten langsam ___ Abschluss kommen.","Wenn du einen Fehler gemacht hast, solltest du das wieder ___ Ordnung bringen.","Sie können wählen: Zwei Angebote stehen ___ Auswahl.","Diese Pflanze ist giftig, du solltest mit den Blättern nicht ___ Berührung kommen.","Wenn man die Forderungen nicht erfüllt, werden die Arbeiter ___ Streik treten.","Sie haben mich da ___ eine Idee gebracht.","Alex möchte seinen Eltern nicht länger ___ Last fallen.","Der Kaffeeautomat ist zurzeit leider ___ Betrieb.","Mit seinen ständigen Zwischenfragen brachte Max den Redner völlig ___ dem Konzept.","Ich weiß leider nicht, wie viel Geld für dieses Projekt ___ Verfügung steht."],"sol":["zu","in","außer","zum","in","zur","in","in","auf","zur","in","aus","zur"]},{"t":"Übung 3","i":"Ergänzen Sie einen Artikel, falls möglich.","items":["Die Verhandlungen stehen kurz vor ___ Abschluss.","Wer zu Ferienbeginn reist, muss oft lange Wartezeiten in ___ Kauf nehmen.","Ihr solltet den Streit beenden und endlich ___ Kompromiss schließen.","Wir müssen los. Wir müssen jetzt ___ Abschied nehmen.","Ich habe keine Zeit, ich muss noch ___ Besorgung machen.","Der Text ist noch nicht fertig, er befindet sich in ___ Arbeit.","Sind Sie denn schon zu ___ Entscheidung gekommen?","Ich kann am Samstag nicht mitfahren, weil ich ___ Besuch bekomme.","Kannst du vielleicht die Pakete in ___ Empfang nehmen?","Ich weiß nicht, ob er ___ Ahnung davon hat, was dieses Projekt kostet."],"sol":["dem","– (kein Artikel)","einen","– (kein Artikel)","eine","– (kein Artikel)","einer","– (kein Artikel)","– (kein Artikel)","eine"]},{"t":"Übung 4","i":"Welches Verb passt?","items":["Hilfe ____ > ____","eine Vereinbarung ____ > ____","Kritik ____ > ____","Kontrolle ____ > ____","einen Anspruch ____ > ____","eine Auswahl ____ > ____","Ersatz ____ > ____","eine Rede ____ > ____","Zensur ____ > ____","Protokoll ____ > ____","Abschied ____ > ____"],"bank":"ausüben - üben - ergreifen - erheben - leisten - führen - halten - nehmen - treffen","bsp":"Beispiel: die Flucht ergreifen > flüchten","sol":["leisten > helfen","treffen > vereinbaren","üben > kritisieren","ausüben > kontrollieren","erheben > beanspruchen","treffen > auswählen","leisten > ersetzen","halten > reden","ausüben > zensieren","führen > protokollieren","nehmen > sich verabschieden"]},{"t":"Übung 5","i":"Welches Verb passt?","items":["in Panik ____ > ___ werden","in Verdacht ____ > ___ sein","außer Atem ____ > ___ sein","Macht ____ > ___ sein","zur Ruhe ____ > ___ werden"],"bank":"ausüben - geraten - kommen - sein - stehen - treten","bsp":"Beispiel: in Aktion treten > aktiv werden","sol":["geraten > panisch werden","stehen > verdächtig sein","sein > atemlos sein","ausüben > mächtig sein","kommen > ruhig werden"]},{"t":"Übung 6","i":"Aktiv oder Passiv?","items":["zur Überzeugung ____ > ____","eine Auswahl ____ > ____","Zustimmung ____ > ____","unter Verdacht ____ > ____","unter Beweis ____ > ____","eine Anzahlung ____ > ____","unter dem Einfluss ____ > ____","den Respekt ____ > ____","Vorsorge ____ > ____","Anerkennung ____ > ____"],"bsp":"Beispiele: in Erfahrung bringen > erfahren\nGehör finden > gehört werden","sol":["zur Überzeugung gelangen > sich überzeugen","eine Auswahl treffen > auswählen","Zustimmung finden > zugestimmt werden","unter Verdacht stehen > verdächtigt werden","unter Beweis stellen > beweisen","eine Anzahlung leisten > anzahlen","unter dem Einfluss stehen > beeinflusst werden","den Respekt genießen > respektiert werden","Vorsorge treffen > vorsorgen","Anerkennung finden > anerkannt werden"]},{"t":"Übung 7","i":"Ersetzen Sie die Funktionsverbgefüge durch einfache Verben. (aktiv - passiv)","items":["Deine Pläne genießen die volle Unterstützung der Kollegen.\nDeine Pläne ___ von den Kollegen ____.","Die ständigen Diskussionen bringen das ganze Projekt in Gefahr.\nDie ständigen Diskussionen ____ das ganze Projekt.","Die Verhandlungen sollen bis Ende des Monats zum Abschluss kommen.\nDie Verhandlungen sollen bis Ende des Monats _____.","Ich musste für die Küche eine Anzahlung von 2000.- Euro leisten.\nIch musste für die Küche 2000.- Euro ___.","Bei der Tagung kamen die jüngsten Forschungsergebnisse zur Sprache.\nBei der Tagung ___ die jüngsten Forschungsergebnisse ____.","Man gab uns den Rat, den Vertrag nicht zu unterzeichnen.\nMan ___ uns, den Vertrag nicht zu unterzeichnen.","Diese Geräte sollen schon nächstes Jahr zum Einsatz kommen.\nDiese Geräte sollen schon nächstes Jahr _____.","Diese Theorie findet zunehmend Beachtung.\nDiese Theorie ___ zunehmend ____."],"sol":["Deine Pläne werden von den Kollegen voll unterstützt.","Die ständigen Diskussionen gefährden das ganze Projekt.","Die Verhandlungen sollen bis Ende des Monats abgeschlossen werden.","Ich musste für die Küche 2000.- Euro anzahlen.","Bei der Tagung wurden die jüngsten Forschungsergebnisse besprochen.","Man riet uns, den Vertrag nicht zu unterzeichnen.","Diese Geräte sollen schon nächstes Jahr eingesetzt werden.","Diese Theorie wird zunehmend beachtet."]}]};
+
+const root=document.getElementById('root');
+let store={};const KEY="grammatik-c1-antworten";
+try{store=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(store))}catch(e){}};
+const mk=(tag,cls,txt)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(txt!==undefined)e.textContent=txt;return e};
+function field(id,cls){
+  const i=mk('input','f '+cls);i.type='text';i.autocomplete='off';i.spellcheck=false;
+  i.value=store[id]||'';
+  i.oninput=()=>{if(i.value)store[id]=i.value;else delete store[id];save()};
+  return i;
+}
+C.ex.forEach((e,ei)=>{
+  const box=mk('section','ex');
+  const head=mk('div','head');head.appendChild(mk('h3',null,e.t));
+  const btn=mk('button','chk','Check');btn.type='button';
+  btn.onclick=()=>{const on=box.classList.toggle('show');btn.textContent=on?'Verbergen':'Check'};
+  const rst=mk('button','chk','Reset');rst.type='button';
+  // Reset clears every field of this exercise (and its saved answers) via the normal input handlers
+  rst.onclick=()=>box.querySelectorAll('input.f').forEach(i=>{if(i.value){i.value='';i.dispatchEvent(new Event('input',{bubbles:true}))}});
+  const btns=mk('div','btns');btns.appendChild(btn);btns.appendChild(rst);
+  head.appendChild(btns);box.appendChild(head);
+  if(e.i)box.appendChild(mk('p','instr',e.i));
+  if(e.hint)box.appendChild(mk('p','hint',e.hint));
+  if(e.bank)box.appendChild(mk('div','bank',e.bank));
+  if(e.bsp)box.appendChild(mk('div','bsp',e.bsp));
+  const ol=mk('ol');
+  e.items.forEach((it,k)=>{
+    const li=mk('li');
+    li.appendChild(mk('span','l',String.fromCharCode(97+k%26)+')'));
+    const b=mk('div','body');
+    const base=C.id+'-'+ei+'-'+k;
+    let n=0;
+    it.split('\n').forEach(ln=>{
+      const q=mk('div','q');
+      ln.split(/(_{3,})/).forEach(p=>{
+        if(/^_{3,}$/.test(p))q.appendChild(field(base+'-'+(n++),p.length>=5?'w':p.length===4?'m':'s'));
+        else if(p)q.appendChild(document.createTextNode(p));
+      });
+      b.appendChild(q);
+    });
+    if(n===0)b.appendChild(field(base,'full'));
+    b.appendChild(mk('div','sol',e.sol[k]));
+    li.appendChild(b);ol.appendChild(li);
+  });
+  // Check shows a solution only under items that have an answer: li.filled = at least one non-empty field
+  const upd=li=>li.classList.toggle('filled',[...li.querySelectorAll('input')].some(i=>i.value.trim()));
+  box.addEventListener('input',ev=>{const li=ev.target.closest('li');if(li)upd(li)});
+  ol.querySelectorAll('li').forEach(upd);
+  box.appendChild(ol);root.appendChild(box);
+});
+</script></body></html>

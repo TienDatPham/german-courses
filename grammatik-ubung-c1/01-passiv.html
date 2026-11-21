@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Passiv – Grammatikübungen C1</title>
+<style>
+:root{--bg:#fafaf8;--ink:#222;--soft:#666;--card:#fff;--line:#ddd;--acc:#1a5fb4;--fld:#fffef6;--ok:#1b7a3d;--okbg:#eaf6ee}
+@media (prefers-color-scheme:dark){:root{--bg:#161616;--ink:#eee;--soft:#aaa;--card:#222;--line:#444;--acc:#7ab0ff;--fld:#2a2a22;--ok:#6fd392;--okbg:#1c2a21}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,sans-serif;padding:16px}
+main{max-width:860px;margin:0 auto}
+a{color:var(--acc)}
+h1{font-size:26px;margin:0 0 4px}
+.sub{color:var(--soft);font-size:14px;margin-bottom:12px}
+.top{margin-bottom:10px;font-size:14px}
+.ex{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:14px 0}
+.head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:4px}
+.ex h3{font-size:17px;margin:0}
+.chk{font:inherit;font-size:14px;padding:4px 14px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);cursor:pointer;flex:none}
+.btns{display:flex;gap:8px;flex:none}
+.chk:hover{border-color:var(--acc);color:var(--acc)}
+.instr{margin:0 0 6px;font-weight:500}
+.hint{margin:0 0 6px;color:var(--soft);font-size:14px}
+.bank{margin:0 0 8px;padding:6px 10px;border:1px dashed var(--line);border-radius:6px;font-size:14px}
+.bsp{margin:0 0 10px;padding:6px 10px;background:var(--bg);border-left:3px solid var(--acc);font-size:14.5px;white-space:pre-line}
+ol{list-style:none;margin:0;padding:0}
+li{display:flex;gap:8px;padding:6px 0;border-top:1px solid var(--line);align-items:baseline}
+li:first-child{border-top:0}
+.l{flex:0 0 1.6em;color:var(--soft);font-weight:600}
+.body{flex:1;min-width:0}
+.q{margin-bottom:3px}
+input.f{font:inherit;color:var(--ink);background:var(--fld);border:0;border-bottom:1.5px solid var(--soft);padding:1px 4px;min-width:0}
+input.f:focus{outline:0;border-bottom-color:var(--acc);background:var(--bg)}
+input.full{display:block;width:100%}
+input.s{width:7em}input.m{width:13em}input.w{width:22em;max-width:100%}
+.sol{display:none;margin-top:4px;padding:4px 10px;background:var(--okbg);border-left:3px solid var(--ok);color:var(--ok);font-size:15px;white-space:pre-line}
+.ex.show li.filled .sol{display:block}
+.pager{display:flex;justify-content:space-between;margin:28px 0 8px;font-size:15px}
+.idx a{display:block;padding:10px 14px;margin:8px 0;background:var(--card);border:1px solid var(--line);border-radius:8px;text-decoration:none;color:var(--ink)}
+.idx a:hover{border-color:var(--acc);color:var(--acc)}
+.idx small{color:var(--soft);margin-left:8px}
+@media print{.chk,.top,.pager{display:none}.sol{display:none!important}.ex{break-inside:avoid}body{background:#fff;color:#000}input.f{background:#fff}}
+</style></head><body><main>
+<div class="top"><a href="index.html">← Übersicht</a></div>
+<h1>Passiv</h1>
+<div class="sub">Grammatikübungen C1. „Check“ zeigt eine Lösung unter jeder Antwort. Die Lösungen sind selbst erstellt, nicht aus dem Buch. Bei offenen Aufgaben sind auch andere richtige Antworten möglich. Antworten werden im Browser gespeichert.</div>
+<div id="root"></div>
+<div class="pager"><span></span><a href="02-trennbare-und-untrennbare-verben.html">Trennbare und untrennbare Verben →</a></div>
+</main>
+<script>
+const C={"id":"passiv","name":"Passiv","ex":[{"t":"1.1 Vorgangspassiv · Übung 1","i":"Bilden Sie das Vorgangspassiv. Achten Sie auf die Zeit.","items":["Manche Ärzte empfehlen diese Impfungen.","Ich hatte den Kollegen bereits informiert.","Computer überwachen die Produktion.","Ihr habt dieses Projekt heftig kritisiert.","Der Beamte überprüfte den Inhalt des Kuverts.","Der Zeuge hat den Täter erkannt.","Dieses Gerät misst kleinste Veränderungen.","Paul kopierte alle wichtigen Dateien.","Wir hatten dieses Angebot abgelehnt.","Das Rote Kreuz verteilte die Hilfsgüter."],"sol":["Diese Impfungen werden von manchen Ärzten empfohlen.","Der Kollege war (von mir) bereits informiert worden.","Die Produktion wird von Computern überwacht.","Dieses Projekt ist von euch heftig kritisiert worden.","Der Inhalt des Kuverts wurde vom Beamten überprüft.","Der Täter ist vom Zeugen erkannt worden.","Kleinste Veränderungen werden von diesem Gerät gemessen.","Alle wichtigen Dateien wurden von Paul kopiert.","Dieses Angebot war (von uns) abgelehnt worden.","Die Hilfsgüter wurden vom Roten Kreuz verteilt."]},{"t":"1.1 Vorgangspassiv · Übung 2","i":"Bilden Sie das Vorgangspassiv.","items":["Man verschob den Termin.","Man schliff die Messer.","Man vermied einen Konflikt.","Man verlor das Spiel.","Man schlug die Zelte auf.","Man schloss den Tresor.","Niemand entdeckte den Schatz.","Niemand fand den Fehler.","Niemand zwang dich.","Niemand las die Instruktionen.","Niemand unterschrieb den Vertrag.","Niemand wusch den Wagen."],"sol":["Der Termin wurde verschoben.","Die Messer wurden geschliffen.","Ein Konflikt wurde vermieden.","Das Spiel wurde verloren.","Die Zelte wurden aufgeschlagen.","Der Tresor wurde geschlossen.","Der Schatz wurde von niemandem entdeckt.","Der Fehler wurde von niemandem gefunden.","Du wurdest von niemandem gezwungen.","Die Instruktionen wurden von niemandem gelesen.","Der Vertrag wurde von niemandem unterschrieben.","Der Wagen wurde von niemandem gewaschen."]},{"t":"1.1 Vorgangspassiv · Übung 3","i":"Ergänzen Sie die Sätze. > Vorgangspassiv","items":["Man hat den Bericht bisher noch nicht bestätigt.\nDer Bericht ___ noch nicht ____.","Man erbat nähere Informationen über das Unglück.\nNähere Informationen _____.","Leider hatte man einige wichtige Details übersehen.\nLeider ___ einige wichtige Details ____.","Der Minister sagte eine schnelle Bearbeitung der Anträge zu.\nEine schnelle Bearbeitung der Anträge _____.","Das Unwetter verwüstete den gesamten Landstrich.\n___ gesamte Landstrich ____ Unwetter ____.","Mit einer Haaranalyse weist man den Konsum von Drogen nach.\n___ Konsum von Drogen ___ mit einer Haaranalyse ____.","Man hatte den Fall trotz vieler Proteste nicht weiter untersucht.\n___ Fall ___ trotz vieler Proteste nicht weiter ____."],"sol":["Der Bericht ist noch nicht bestätigt worden.","Nähere Informationen wurden erbeten.","Leider waren einige wichtige Details übersehen worden.","Eine schnelle Bearbeitung der Anträge wurde vom Minister zugesagt.","Der gesamte Landstrich wurde vom Unwetter verwüstet.","Der Konsum von Drogen wird mit einer Haaranalyse nachgewiesen.","Der Fall war trotz vieler Proteste nicht weiter untersucht worden."]},{"t":"1.2 Vorgangspassiv ohne Subjekt · Übung 4","i":"Bilden Sie das Vorgangspassiv im Präteritum.","items":["der Antragsteller - antworten","die Verletzten - helfen","der Zeuge - glauben","der Freund - verzeihen","der Artist - applaudieren","das Geburtstagskind - gratulieren","der Chirurg - assistieren","die Fachleute - misstrauen","die Opfer - beistehen","der Experte - widersprechen","der Kontrahent - drohen","die Bewerberin - absagen","die Musik - lauschen","die Frage - ausweichen","das Gesetz - zustimmen"],"bsp":"Beispiel: Kollege - danken → Dem Kollegen wurde gedankt.","sol":["Dem Antragsteller wurde geantwortet.","Den Verletzten wurde geholfen.","Dem Zeugen wurde geglaubt.","Dem Freund wurde verziehen.","Dem Artisten wurde applaudiert.","Dem Geburtstagskind wurde gratuliert.","Dem Chirurgen wurde assistiert.","Den Fachleuten wurde misstraut.","Den Opfern wurde beigestanden.","Dem Experten wurde widersprochen.","Dem Kontrahenten wurde gedroht.","Der Bewerberin wurde abgesagt.","Der Musik wurde gelauscht.","Der Frage wurde ausgewichen.","Dem Gesetz wurde zugestimmt."]},{"t":"1.2 Vorgangspassiv ohne Subjekt · Übung 5","i":"Bilden Sie das Vorgangspassiv im Präteritum.","items":["die Krise - diskutieren","die Verabredung - denken","Ruhe - bitten","der Scherz - lachen","die Politiker - schimpfen","Rettung - hoffen","die Aussage des Zeugen - zweifeln","diese Gefahr - warnen","diese Probleme - hinweisen","deine Ankunft - rechnen","die Pläne der Firmenleitung - protestieren","der Preis - verhandeln","diese Unhöflichkeit - reagieren","die Entscheidung - zögern","die Gesetze - verstoßen","die Bewirtung der Gäste - sorgen"],"bsp":"Beispiel: eine Alternative - suchen → Nach einer Alternative wurde gesucht.","sol":["Über die Krise wurde diskutiert.","An die Verabredung wurde gedacht.","Um Ruhe wurde gebeten.","Über den Scherz wurde gelacht.","Auf die Politiker wurde geschimpft.","Auf Rettung wurde gehofft.","An der Aussage des Zeugen wurde gezweifelt.","Vor dieser Gefahr wurde gewarnt.","Auf diese Probleme wurde hingewiesen.","Mit deiner Ankunft wurde gerechnet.","Gegen die Pläne der Firmenleitung wurde protestiert.","Über den Preis wurde verhandelt.","Auf diese Unhöflichkeit wurde reagiert.","Mit der Entscheidung wurde gezögert.","Gegen die Gesetze wurde verstoßen.","Für die Bewirtung der Gäste wurde gesorgt."]},{"t":"1.3 Vorgangspassiv mit Modalverben · Übung 6","i":"Bilden Sie Sätze im Vorgangspassiv.","items":["Jetzt muss man die Aufgabe endlich erledigen.","Zuerst muss man das Formular ausfüllen.","Natürlich durfte man die Informationen nicht weitergeben.","Leider konnte man den Fall nicht klären.","Selbstverständlich musste man die Schulden begleichen.","Anscheinend konnte man alle Fragen beantworten.","Vermutlich will man ein besseres Resultat erreichen.","Gestern wollte man das Wichtigste fertigstellen."],"bsp":"Beispiel: Leider konnte man nichts erreichen. → Leider konnte nichts erreicht werden.","sol":["Jetzt muss die Aufgabe endlich erledigt werden.","Zuerst muss das Formular ausgefüllt werden.","Natürlich durften die Informationen nicht weitergegeben werden.","Leider konnte der Fall nicht geklärt werden.","Selbstverständlich mussten die Schulden beglichen werden.","Anscheinend konnten alle Fragen beantwortet werden.","Vermutlich soll ein besseres Resultat erreicht werden. (wollen → sollen)","Gestern sollte das Wichtigste fertiggestellt werden. (wollen → sollen)"]},{"t":"2 Zustandspassiv · Übung 7","i":"Bilden Sie Sätze im Zustandspassiv.","items":["die Waren - sortieren","die Geschenke - einpacken","das Programm - installieren","die Gruppe - benachrichtigen","die Flüge - buchen","die Werkstatt - aufräumen","die E-Mail - weiterleiten","das Formular - ausfüllen","das Geld - überweisen","die Fenster - öffnen"],"bsp":"Beispiel: die Schuhe - putzen → Putz bitte die Schuhe! - Die sind schon längst geputzt.","sol":["Sortier bitte die Waren! – Die sind schon längst sortiert.","Pack bitte die Geschenke ein! – Die sind schon längst eingepackt.","Installier bitte das Programm! – Das ist schon längst installiert.","Benachrichtige bitte die Gruppe! – Die ist schon längst benachrichtigt.","Buch bitte die Flüge! – Die sind schon längst gebucht.","Räum bitte die Werkstatt auf! – Die ist schon längst aufgeräumt.","Leite bitte die E-Mail weiter! – Die ist schon längst weitergeleitet.","Füll bitte das Formular aus! – Das ist schon längst ausgefüllt.","Überweis bitte das Geld! – Das ist schon längst überwiesen.","Öffne bitte die Fenster! – Die sind schon längst geöffnet."]},{"t":"2 Zustandspassiv · Übung 8","i":"Bilden Sie Sätze im Vorgangspassiv (Plusquamperfekt) und im Zustandspassiv.","items":["den Fehler korrigieren","den Vertrag unterzeichnen","die Hemden bügeln","den Pin-Code ändern","die Buchung bestätigen","das Konto sperren","den Ausgang schließen","den Akku aufladen","die Vase zerbrechen","das Fleisch räuchern","den Pfeffer mahlen","die Häuser modernisieren","den Patienten heilen","die Leute schockieren","das Gerät reinigen","den Streit schlichten","den Draht biegen","die Entscheidung treffen"],"bsp":"Beispiel: den Auftrag erledigen → Der Auftrag war erledigt worden, dann war er erledigt.","sol":["Der Fehler war korrigiert worden, dann war er korrigiert.","Der Vertrag war unterzeichnet worden, dann war er unterzeichnet.","Die Hemden waren gebügelt worden, dann waren sie gebügelt.","Der Pin-Code war geändert worden, dann war er geändert.","Die Buchung war bestätigt worden, dann war sie bestätigt.","Das Konto war gesperrt worden, dann war es gesperrt.","Der Ausgang war geschlossen worden, dann war er geschlossen.","Der Akku war aufgeladen worden, dann war er aufgeladen.","Die Vase war zerbrochen worden, dann war sie zerbrochen.","Das Fleisch war geräuchert worden, dann war es geräuchert.","Der Pfeffer war gemahlen worden, dann war er gemahlen.","Die Häuser waren modernisiert worden, dann waren sie modernisiert.","Der Patient war geheilt worden, dann war er geheilt.","Die Leute waren schockiert worden, dann waren sie schockiert.","Das Gerät war gereinigt worden, dann war es gereinigt.","Der Streit war geschlichtet worden, dann war er geschlichtet.","Der Draht war gebogen worden, dann war er gebogen.","Die Entscheidung war getroffen worden, dann war sie getroffen."]},{"t":"2 Zustandspassiv · Übung 9","i":"Formulieren Sie die Aussagen im Zustandspassiv.","items":["Ein Fluss trennt die beiden Stadtteile.","Die Verfassung schützt die Pressefreiheit.","Das Gesetz regelt den Waffenbesitz.","Die Kostenexplosion gefährdet das Projekt.","Das Zirpen der Insekten durchdringt die Nacht.","Der Nebel hat die Berggipfel verhüllt.","Der Regen hat die Wege aufgeweicht.","Das Unwetter hat das Land verwüstet.","Die lange Trockenheit hat die Bäume geschädigt.","Die Leistung des Teams hat die Fans enttäuscht."],"bsp":"Beispiel: Schnee bedeckt die Felder → Die Felder sind von Schnee bedeckt.","sol":["Die beiden Stadtteile sind durch einen Fluss getrennt.","Die Pressefreiheit ist durch die Verfassung geschützt.","Der Waffenbesitz ist durch das Gesetz geregelt.","Das Projekt ist durch die Kostenexplosion gefährdet.","Die Nacht ist vom Zirpen der Insekten durchdrungen.","Die Berggipfel sind vom Nebel verhüllt.","Die Wege sind vom Regen aufgeweicht.","Das Land ist vom Unwetter verwüstet.","Die Bäume sind von der langen Trockenheit geschädigt.","Die Fans sind von der Leistung des Teams enttäuscht."]},{"t":"3 Passiversatzformen · Übung 10","i":"","items":["Wir bekamen den Schrank geliefert.","Ich bekam den Betrag auf das Konto überwiesen.","Ihr habt ein falsches Datum genannt bekommen.","Alle Teilnehmer erhalten die Unterlagen zugesandt.","Der Patient kriegte das Essen ans Bett gebracht."],"bsp":"Beispiel: Ich kriegte die Kosten erstattet. → Man erstattete mir die Kosten.","sol":["Man lieferte uns den Schrank.","Man überwies mir den Betrag auf das Konto.","Man hat euch ein falsches Datum genannt.","Man sendet allen Teilnehmern die Unterlagen zu.","Man brachte dem Patienten das Essen ans Bett."]},{"t":"3 Passiversatzformen · Übung 11","i":"Bilden Sie Sätze im Aktiv.","items":["Die Instruktionen sind genau zu befolgen.","Die Mängel waren leider nicht zu beheben.","Der Hinterausgang ist nur im Notfall zu benutzen.","Verträge sind einzuhalten.","Auf dem Foto war nicht alles zu erkennen."],"bsp":"Beispiel: Der Raum ist immer abzuschließen. → Man muss den Raum immer abschließen.","sol":["Man muss die Instruktionen genau befolgen.","Man konnte die Mängel leider nicht beheben.","Man darf den Hinterausgang nur im Notfall benutzen.","Man muss Verträge einhalten.","Man konnte auf dem Foto nicht alles erkennen."]},{"t":"3 Passiversatzformen · Übung 12","i":"Bilden Sie Sätze im Aktiv.","items":["Exakte Prognosen lassen sich nicht erstellen.","Der Schrank ließ sich nicht zerlegen.","Das Material lässt sich einigermaßen gut verarbeiten.","Diese Idee ließ sich nicht umsetzen.","Dieser Termin lässt sich nicht kurzfristig verschieben.","Dieser Prozess ließe sich mit Sicherheit vereinfachen."],"bsp":"Beispiel: Diese Zahl lässt sich durch drei teilen. → Man kann diese Zahl durch drei teilen.","sol":["Man kann exakte Prognosen nicht erstellen.","Man konnte den Schrank nicht zerlegen.","Man kann das Material einigermaßen gut verarbeiten.","Man konnte diese Idee nicht umsetzen.","Man kann diesen Termin nicht kurzfristig verschieben.","Man könnte diesen Prozess mit Sicherheit vereinfachen."]},{"t":"3 Passiversatzformen · Übung 13","i":"Bilden Sie Sätze im Aktiv.","items":["Die Daten gilt es richtig zu interpretieren.","Alle Fenster im Erdgeschoss gehören erneuert.","Die weitere Entwicklung bleibt abzuwarten.","In die Eingangshalle gehört ein Feuerlöscher gehängt.","Alle Teile des Gerätes gehören nummeriert.","Die erfolgreiche Arbeit heißt es jetzt fortzusetzen."],"bsp":"Beispiel: Die Ergebnisse gehören überprüft. → Man muss die Ergebnisse unbedingt überprüfen.","sol":["Man muss die Daten richtig interpretieren.","Man muss alle Fenster im Erdgeschoss erneuern.","Man muss die weitere Entwicklung abwarten.","Man muss in der Eingangshalle einen Feuerlöscher aufhängen.","Man muss alle Teile des Gerätes nummerieren.","Man muss die erfolgreiche Arbeit jetzt fortsetzen."]}]};
+
+const root=document.getElementById('root');
+let store={};const KEY="grammatik-c1-antworten";
+try{store=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(store))}catch(e){}};
+const mk=(tag,cls,txt)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(txt!==undefined)e.textContent=txt;return e};
+function field(id,cls){
+  const i=mk('input','f '+cls);i.type='text';i.autocomplete='off';i.spellcheck=false;
+  i.value=store[id]||'';
+  i.oninput=()=>{if(i.value)store[id]=i.value;else delete store[id];save()};
+  return i;
+}
+C.ex.forEach((e,ei)=>{
+  const box=mk('section','ex');
+  const head=mk('div','head');head.appendChild(mk('h3',null,e.t));
+  const btn=mk('button','chk','Check');btn.type='button';
+  btn.onclick=()=>{const on=box.classList.toggle('show');btn.textContent=on?'Verbergen':'Check'};
+  const rst=mk('button','chk','Reset');rst.type='button';
+  // Reset clears every field of this exercise (and its saved answers) via the normal input handlers
+  rst.onclick=()=>box.querySelectorAll('input.f').forEach(i=>{if(i.value){i.value='';i.dispatchEvent(new Event('input',{bubbles:true}))}});
+  const btns=mk('div','btns');btns.appendChild(btn);btns.appendChild(rst);
+  head.appendChild(btns);box.appendChild(head);
+  if(e.i)box.appendChild(mk('p','instr',e.i));
+  if(e.hint)box.appendChild(mk('p','hint',e.hint));
+  if(e.bank)box.appendChild(mk('div','bank',e.bank));
+  if(e.bsp)box.appendChild(mk('div','bsp',e.bsp));
+  const ol=mk('ol');
+  e.items.forEach((it,k)=>{
+    const li=mk('li');
+    li.appendChild(mk('span','l',String.fromCharCode(97+k%26)+')'));
+    const b=mk('div','body');
+    const base=C.id+'-'+ei+'-'+k;
+    let n=0;
+    it.split('\n').forEach(ln=>{
+      const q=mk('div','q');
+      ln.split(/(_{3,})/).forEach(p=>{
+        if(/^_{3,}$/.test(p))q.appendChild(field(base+'-'+(n++),p.length>=5?'w':p.length===4?'m':'s'));
+        else if(p)q.appendChild(document.createTextNode(p));
+      });
+      b.appendChild(q);
+    });
+    if(n===0)b.appendChild(field(base,'full'));
+    b.appendChild(mk('div','sol',e.sol[k]));
+    li.appendChild(b);ol.appendChild(li);
+  });
+  // Check shows a solution only under items that have an answer: li.filled = at least one non-empty field
+  const upd=li=>li.classList.toggle('filled',[...li.querySelectorAll('input')].some(i=>i.value.trim()));
+  box.addEventListener('input',ev=>{const li=ev.target.closest('li');if(li)upd(li)});
+  ol.querySelectorAll('li').forEach(upd);
+  box.appendChild(ol);root.appendChild(box);
+});
+</script></body></html>

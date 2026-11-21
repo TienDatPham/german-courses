@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Modalverben – Grammatikübungen C1</title>
+<style>
+:root{--bg:#fafaf8;--ink:#222;--soft:#666;--card:#fff;--line:#ddd;--acc:#1a5fb4;--fld:#fffef6;--ok:#1b7a3d;--okbg:#eaf6ee}
+@media (prefers-color-scheme:dark){:root{--bg:#161616;--ink:#eee;--soft:#aaa;--card:#222;--line:#444;--acc:#7ab0ff;--fld:#2a2a22;--ok:#6fd392;--okbg:#1c2a21}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,sans-serif;padding:16px}
+main{max-width:860px;margin:0 auto}
+a{color:var(--acc)}
+h1{font-size:26px;margin:0 0 4px}
+.sub{color:var(--soft);font-size:14px;margin-bottom:12px}
+.top{margin-bottom:10px;font-size:14px}
+.ex{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:14px 0}
+.head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:4px}
+.ex h3{font-size:17px;margin:0}
+.chk{font:inherit;font-size:14px;padding:4px 14px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);cursor:pointer;flex:none}
+.btns{display:flex;gap:8px;flex:none}
+.chk:hover{border-color:var(--acc);color:var(--acc)}
+.instr{margin:0 0 6px;font-weight:500}
+.hint{margin:0 0 6px;color:var(--soft);font-size:14px}
+.bank{margin:0 0 8px;padding:6px 10px;border:1px dashed var(--line);border-radius:6px;font-size:14px}
+.bsp{margin:0 0 10px;padding:6px 10px;background:var(--bg);border-left:3px solid var(--acc);font-size:14.5px;white-space:pre-line}
+ol{list-style:none;margin:0;padding:0}
+li{display:flex;gap:8px;padding:6px 0;border-top:1px solid var(--line);align-items:baseline}
+li:first-child{border-top:0}
+.l{flex:0 0 1.6em;color:var(--soft);font-weight:600}
+.body{flex:1;min-width:0}
+.q{margin-bottom:3px}
+input.f{font:inherit;color:var(--ink);background:var(--fld);border:0;border-bottom:1.5px solid var(--soft);padding:1px 4px;min-width:0}
+input.f:focus{outline:0;border-bottom-color:var(--acc);background:var(--bg)}
+input.full{display:block;width:100%}
+input.s{width:7em}input.m{width:13em}input.w{width:22em;max-width:100%}
+.sol{display:none;margin-top:4px;padding:4px 10px;background:var(--okbg);border-left:3px solid var(--ok);color:var(--ok);font-size:15px;white-space:pre-line}
+.ex.show li.filled .sol{display:block}
+.pager{display:flex;justify-content:space-between;margin:28px 0 8px;font-size:15px}
+.idx a{display:block;padding:10px 14px;margin:8px 0;background:var(--card);border:1px solid var(--line);border-radius:8px;text-decoration:none;color:var(--ink)}
+.idx a:hover{border-color:var(--acc);color:var(--acc)}
+.idx small{color:var(--soft);margin-left:8px}
+@media print{.chk,.top,.pager{display:none}.sol{display:none!important}.ex{break-inside:avoid}body{background:#fff;color:#000}input.f{background:#fff}}
+</style></head><body><main>
+<div class="top"><a href="index.html">← Übersicht</a></div>
+<h1>Modalverben</h1>
+<div class="sub">Grammatikübungen C1. „Check“ zeigt eine Lösung unter jeder Antwort. Die Lösungen sind selbst erstellt, nicht aus dem Buch. Bei offenen Aufgaben sind auch andere richtige Antworten möglich. Antworten werden im Browser gespeichert.</div>
+<div id="root"></div>
+<div class="pager"><a href="03-funktionsverbgefuege.html">← Funktionsverbgefüge</a><a href="05-konjunktiv-ii.html">Konjunktiv II →</a></div>
+</main>
+<script>
+const C={"id":"modal","name":"Modalverben","ex":[{"t":"1 Grundbedeutungen (objektiver Gebrauch) · Übung 1","i":"Bilden Sie Sätze mit Modalverb.","items":["Man erlaubte den Kindern, bis 10.00 Uhr fernzusehen.","Man forderte uns dazu auf, Beweise für unsere Beschuldigungen vorzulegen.","Sie haben die Möglichkeit, die Buchung jederzeit zu stornieren.","Es ist notwendig, die Geheimnummer zu ändern.","Sie bekam die Anweisung, alle Listen neu zu schreiben.","Es ist unmöglich, diese Vorschläge zu akzeptieren.","Sie haben das Recht, die Aussage zu verweigern.","Man erlaubte uns nicht, in den Firmenräumen zu fotografieren.","Er ist außerstande, deine Fragen zu beantworten.","Sie hatte die Absicht, ihm eine Karte zu schreiben.","Er verlangte, den Geschäftsführer zu sprechen.","Ich hatte die Möglichkeit, kurz mit ihm zu reden.","Wir hatten die Aufgabe, die Konferenz vorzubereiten.","Es ist sehr wichtig, dass du dich nicht verspätest.","Ist es gestattet, dass ich mich zu Ihnen setze?","Julia ist nicht in der Lage, sich um alles zu kümmern.","Sie hatte vor, den Laden zu verkaufen.","Er hatte keine Genehmigung, die Akten zu kopieren.","Der kleine Junge war nicht imstande, den schweren Kasten zu tragen.","Sie beabsichtigte, ihren alten Schrank restaurieren zu lassen.","Ich hatte keine Lust, die ganze Wohnung alleine aufzuräumen.","Es ist verboten, diese gefährlichen Chemikalien zu exportieren.","Man gab ihm die Gelegenheit, sich zu den Anschuldigungen zu äußern.","Ich weigerte mich, Auskunft darüber zu geben.","Man gab ihr den Auftrag, die Kosten des Projekts zu berechnen.","Es ist wichtig, den Flug frühzeitig zu buchen."],"bsp":"Beispiel: Er ist nicht fähig, sich länger zu konzentrieren. → Er kann sich nicht länger konzentrieren.","sol":["Die Kinder durften bis 10.00 Uhr fernsehen.","Wir sollten Beweise für unsere Beschuldigungen vorlegen.","Sie können die Buchung jederzeit stornieren.","Man muss die Geheimnummer ändern.","Sie sollte alle Listen neu schreiben.","Man kann diese Vorschläge nicht akzeptieren.","Sie dürfen die Aussage verweigern.","Wir durften in den Firmenräumen nicht fotografieren.","Er kann deine Fragen nicht beantworten.","Sie wollte ihm eine Karte schreiben.","Er wollte den Geschäftsführer sprechen.","Ich konnte kurz mit ihm reden.","Wir sollten die Konferenz vorbereiten.","Du darfst dich nicht verspäten.","Darf ich mich zu Ihnen setzen?","Julia kann sich nicht um alles kümmern.","Sie wollte den Laden verkaufen.","Er durfte die Akten nicht kopieren.","Der kleine Junge konnte den schweren Kasten nicht tragen.","Sie wollte ihren alten Schrank restaurieren lassen.","Ich wollte die ganze Wohnung nicht alleine aufräumen.","Man darf diese gefährlichen Chemikalien nicht exportieren.","Er durfte sich zu den Anschuldigungen äußern.","Ich wollte darüber keine Auskunft geben.","Sie sollte die Kosten des Projekts berechnen.","Man muss den Flug frühzeitig buchen."]},{"t":"1 Grundbedeutungen (objektiver Gebrauch) · Übung 2","i":"","items":["Alle haben die Regeln zu beachten.","Niemand hat sich von der Gruppe zu entfernen.","Ich habe dir für all deine Unterstützung zu danken.","Aufgrund des Streiks hat man mit Verspätungen zu rechnen.","Sie haben auf alle Fragen wahrheitsgemäß zu antworten.","Die Soldaten haben dem Offizier nicht zu widersprechen.","Man hat die Geräte regelmäßig zu warten.","Ich hatte leider noch viel zu erledigen.","Der Sportler hatte streng auf sein Gewicht zu achten.","Du hast mit niemandem über diese Angelegenheit zu sprechen.","Worauf hast du dich bei diesem Projekt zu konzentrieren?","Wogegen hat man sich vor dieser Reise impfen zu lassen?","Dazu habe ich nichts zu sagen."],"bsp":"Beispiel: Er hatte sich beim Chef zu melden. → Er musste sich beim Chef melden.","sol":["Alle müssen die Regeln beachten.","Niemand darf sich von der Gruppe entfernen.","Ich muss dir für all deine Unterstützung danken.","Aufgrund des Streiks muss man mit Verspätungen rechnen.","Sie müssen auf alle Fragen wahrheitsgemäß antworten.","Die Soldaten dürfen dem Offizier nicht widersprechen.","Man muss die Geräte regelmäßig warten.","Ich musste leider noch viel erledigen.","Der Sportler musste streng auf sein Gewicht achten.","Du darfst mit niemandem über diese Angelegenheit sprechen.","Worauf musst du dich bei diesem Projekt konzentrieren?","Wogegen muss man sich vor dieser Reise impfen lassen?","Dazu kann ich nichts sagen."]},{"t":"2 Sprecherbezogene Bedeutung (subjektiver Gebrauch) · Übung 3","i":"Bilden Sie Sätze mit Modalverben.","items":["Ich vermute, dass sie euch belogen hat.","Gegen diese Reformen protestieren wahrscheinlich viele.","Unter Umständen irrst du dich.","Ich glaube, dass Paul damals schon in München gewohnt hat.","Es ist denkbar, dass sie umgezogen ist.","Der Autofahrer war womöglich betrunken."],"hint":"Vermutung (könnte/dürfte)","sol":["Sie dürfte euch belogen haben.","Gegen diese Reformen dürften viele protestieren.","Du könntest dich irren.","Paul dürfte damals schon in München gewohnt haben.","Sie könnte umgezogen sein.","Der Autofahrer könnte betrunken gewesen sein."]},{"t":"2 Sprecherbezogene Bedeutung (subjektiver Gebrauch) · Übung 4","i":"Bilden Sie Sätze mit Modalverben.","items":["Sie hat dich bestimmt falsch verstanden.","Sie hat zweifellos nicht lange gewartet.","Ich bin relativ sicher, dass du die Stelle bekommst.","Zweifellos wohnt sie in einem sehr luxuriösen Haus.","Sein Onkel ist ziemlich sicher schon über achtzig Jahre alt.","Ich bin mir sicher, dass er die Tür nicht abgeschlossen hat."],"hint":"Schlussfolgerung (müsste/muss \u003c> kann nicht/kein)","sol":["Sie muss dich falsch verstanden haben.","Sie kann nicht lange gewartet haben.","Du müsstest die Stelle bekommen.","Sie muss in einem sehr luxuriösen Haus wohnen.","Sein Onkel dürfte schon über achtzig Jahre alt sein.","Er kann die Tür nicht abgeschlossen haben."]},{"t":"2 Sprecherbezogene Bedeutung (subjektiver Gebrauch) · Übung 5","i":"Bilden Sie Sätze mit Modalverben.","items":["Angeblich hat ihn sein Vetter neulich besucht.","Man erzählt, dass es in der Schillerstraße gebrannt hat.","In der Zeitung steht, dass man eine Leiche entdeckt hat.","Man sagt, dass Paula von ihrer Tante ein Haus geerbt hat.","Angeblich steckt die Firma in finanziellen Schwierigkeiten.","Ich habe gehört, dass dieses Restaurant sehr schlecht ist."],"hint":"kritische Distanz - Gerücht - Information aus zweiter Hand (soll)","sol":["Sein Vetter soll ihn neulich besucht haben.","In der Schillerstraße soll es gebrannt haben.","Man soll eine Leiche entdeckt haben.","Paula soll von ihrer Tante ein Haus geerbt haben.","Die Firma soll in finanziellen Schwierigkeiten stecken.","Dieses Restaurant soll sehr schlecht sein."]},{"t":"2 Sprecherbezogene Bedeutung (subjektiver Gebrauch) · Übung 6","i":"Bilden Sie Sätze mit Modalverben.","items":["„Ich habe den Unfall genau gesehen.“","„Ich bin an jenem Abend zufällig in diese Kneipe gekommen.“","„Ich kenne den Angeklagten nicht.“","„Ich habe alles beobachtet.“","„Ich bin schon oft diese Strecke gefahren.“","„Plötzlich habe ich einen Schuss gehört.“","„Ich kann mich nicht mehr genau erinnern.“"],"hint":"kritische Stellungnahme - bezweifelte Behauptung (will). Der Zeuge behauptet etwas, aber man ist nicht sicher, ob er die Wahrheit spricht:","bsp":"Beispiel: „Ich habe ein Geräusch gehört.“ → Der Zeuge will ein Geräusch gehört haben.","sol":["Der Zeuge will den Unfall genau gesehen haben.","Der Zeuge will an jenem Abend zufällig in diese Kneipe gekommen sein.","Der Zeuge will den Angeklagten nicht kennen.","Der Zeuge will alles beobachtet haben.","Der Zeuge will schon oft diese Strecke gefahren sein.","Der Zeuge will plötzlich einen Schuss gehört haben.","Der Zeuge will sich nicht mehr genau erinnern können."]},{"t":"2 Sprecherbezogene Bedeutung (subjektiver Gebrauch) · Übung 7","i":"Bilden Sie Sätze mit Modalverben.","items":["Ich rate dir, nicht so viel Alkohol zu trinken.","Es ist empfehlenswert, sich vor der Reise impfen zu lassen.","Ich empfehle Ihnen, sich einen guten Anwalt zu nehmen.","Ich halte es für besser, wenn Sie mit dem Rauchen aufhören.","Ich gebe euch den guten Rat, keine Zeit zu verlieren.","Es ist empfehlenswert, alle wichtigen Dateien doppelt zu sichern."],"hint":"Empfehlung (sollte/müsste)","sol":["Du solltest nicht so viel Alkohol trinken.","Man sollte sich vor der Reise impfen lassen.","Sie sollten sich einen guten Anwalt nehmen.","Sie sollten mit dem Rauchen aufhören.","Ihr solltet keine Zeit verlieren.","Man sollte alle wichtigen Dateien doppelt sichern."]},{"t":"2 Sprecherbezogene Bedeutung (subjektiver Gebrauch) · Übung 8","i":"Bilden Sie Sätze mit Modalverben.","items":["Es wäre besser gewesen, wenn er einen Experten gefragt hätte.","Es wäre besser gewesen, wenn ich zum Zahnarzt gegangen wäre.","Es wäre besser gewesen, wenn man an die Folgen gedacht hätte.","Es wäre besser gewesen, wenn er nicht gekündigt hätte.","Es wäre besser gewesen, wenn sie die Wahrheit gesagt hätte.","Es wäre besser gewesen, wenn du nicht auf diesen Rat gehört hättest."],"hint":"nachträgliche Feststellung - Bedauern (hätte ... sollen/müssen \u003c> dürfen)","sol":["Er hätte einen Experten fragen sollen.","Ich hätte zum Zahnarzt gehen sollen.","Man hätte an die Folgen denken sollen.","Er hätte nicht kündigen dürfen.","Sie hätte die Wahrheit sagen sollen.","Du hättest nicht auf diesen Rat hören dürfen."]},{"t":"3 Vorgangspassiv mit Modalverben · Übung 9","i":"(objektive Modalverben) Bilden Sie Sätze im Vorgangspassiv.","items":["Man kann die Reihenfolge nicht verändern.","Man muss ihm immer alles zweimal erklären.","Die Mitarbeiter dürfen die Pläne nicht weitergeben.","Niemand konnte diese Thesen widerlegen.","Die Experten sollten die Risiken aufzeigen.","Man konnte den Aufenthalt nicht verlängern.","Niemand durfte den Raum betreten.","Man will den Versuch wiederholen.","Man wollte die Leute nicht beunruhigen.","Max wollte die Angelegenheit schnell erledigen."],"bsp":"Beispiel: Man konnte den Fehler beheben. → Der Fehler konnte behoben werden.","sol":["Die Reihenfolge kann nicht verändert werden.","Ihm muss immer alles zweimal erklärt werden.","Die Pläne dürfen von den Mitarbeitern nicht weitergegeben werden.","Diese Thesen konnten von niemandem widerlegt werden.","Die Risiken sollten von den Experten aufgezeigt werden.","Der Aufenthalt konnte nicht verlängert werden.","Der Raum durfte von niemandem betreten werden.","Der Versuch soll wiederholt werden.","Die Leute sollten nicht beunruhigt werden.","Die Angelegenheit sollte von Max schnell erledigt werden."]},{"t":"3 Vorgangspassiv mit Modalverben · Übung 10","i":"(subjektive Modalverben) Bilden Sie Passivsätze mit Modalverb.","items":["Vermutlich repariert man den Automaten bis morgen.","Sicherlich hat man ihn eingeladen.","Wahrscheinlich glaubt man ihr.","Vielleicht hat man euch betrogen.","Solche Fehler übersieht man bestimmt nicht.","Man nimmt uns vielleicht mit.","Angeblich baut man hier demnächst eine neue Straße.","Vielleicht hat man dich erkannt."],"bsp":"Beispiele: Vielleicht ändert man den Termin. (Präsens/Futur)\nMan könnte den Termin ändern. → Der Termin könnte geändert werden.\nWahrscheinlich hat man die Leute informiert. (Vergangenheit)\nMan dürfte die Leute informiert haben. → Die Leute dürften informiert worden sein.","sol":["Der Automat dürfte bis morgen repariert werden.","Er muss eingeladen worden sein.","Ihr dürfte geglaubt werden.","Ihr könntet betrogen worden sein.","Solche Fehler dürften nicht übersehen werden.","Wir könnten mitgenommen werden.","Hier soll demnächst eine neue Straße gebaut werden.","Du könntest erkannt worden sein."]}]};
+
+const root=document.getElementById('root');
+let store={};const KEY="grammatik-c1-antworten";
+try{store=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(store))}catch(e){}};
+const mk=(tag,cls,txt)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(txt!==undefined)e.textContent=txt;return e};
+function field(id,cls){
+  const i=mk('input','f '+cls);i.type='text';i.autocomplete='off';i.spellcheck=false;
+  i.value=store[id]||'';
+  i.oninput=()=>{if(i.value)store[id]=i.value;else delete store[id];save()};
+  return i;
+}
+C.ex.forEach((e,ei)=>{
+  const box=mk('section','ex');
+  const head=mk('div','head');head.appendChild(mk('h3',null,e.t));
+  const btn=mk('button','chk','Check');btn.type='button';
+  btn.onclick=()=>{const on=box.classList.toggle('show');btn.textContent=on?'Verbergen':'Check'};
+  const rst=mk('button','chk','Reset');rst.type='button';
+  // Reset clears every field of this exercise (and its saved answers) via the normal input handlers
+  rst.onclick=()=>box.querySelectorAll('input.f').forEach(i=>{if(i.value){i.value='';i.dispatchEvent(new Event('input',{bubbles:true}))}});
+  const btns=mk('div','btns');btns.appendChild(btn);btns.appendChild(rst);
+  head.appendChild(btns);box.appendChild(head);
+  if(e.i)box.appendChild(mk('p','instr',e.i));
+  if(e.hint)box.appendChild(mk('p','hint',e.hint));
+  if(e.bank)box.appendChild(mk('div','bank',e.bank));
+  if(e.bsp)box.appendChild(mk('div','bsp',e.bsp));
+  const ol=mk('ol');
+  e.items.forEach((it,k)=>{
+    const li=mk('li');
+    li.appendChild(mk('span','l',String.fromCharCode(97+k%26)+')'));
+    const b=mk('div','body');
+    const base=C.id+'-'+ei+'-'+k;
+    let n=0;
+    it.split('\n').forEach(ln=>{
+      const q=mk('div','q');
+      ln.split(/(_{3,})/).forEach(p=>{
+        if(/^_{3,}$/.test(p))q.appendChild(field(base+'-'+(n++),p.length>=5?'w':p.length===4?'m':'s'));
+        else if(p)q.appendChild(document.createTextNode(p));
+      });
+      b.appendChild(q);
+    });
+    if(n===0)b.appendChild(field(base,'full'));
+    b.appendChild(mk('div','sol',e.sol[k]));
+    li.appendChild(b);ol.appendChild(li);
+  });
+  // Check shows a solution only under items that have an answer: li.filled = at least one non-empty field
+  const upd=li=>li.classList.toggle('filled',[...li.querySelectorAll('input')].some(i=>i.value.trim()));
+  box.addEventListener('input',ev=>{const li=ev.target.closest('li');if(li)upd(li)});
+  ol.querySelectorAll('li').forEach(upd);
+  box.appendChild(ol);root.appendChild(box);
+});
+</script></body></html>
