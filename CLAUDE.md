@@ -11,8 +11,8 @@ This folder is its own git repo (`origin` = `https://github.com/TienDatPham/germ
 6. **`index.html` lists every page.** When a page is added, renamed or removed, update `index.html` (relative links only) in the same change.
 
 ## Skills (defined in `../.claude/skills/`)
-- `/flashcard <table.md>` and `/flashcard --random X`
-- `/neue-worter [-f] <word list>`
+- `/flashcard --latest|-l`, `--all|-a`, `--random|-r [X]`: flashcard pages (`<ddmmyy>.html`, `all.html`, `random.html`) from `new-words/worterbuch.md`; `/flashcard <table.md>` for any other table
+- `/newwords <word list.txt>`: appends new words as rows (with Timestamp dd.mm.yyyy) to `new-words/worterbuch.md` and sorts it alphabetically
 - `/ubung-erstellen --exercise <pdf> [--answer <pdf>]`
 
 ## Git

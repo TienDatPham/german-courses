@@ -5,9 +5,6 @@ try{known=JSON.parse(localStorage.getItem(D.key)||'{}')}catch(e){}
 const save=()=>{try{localStorage.setItem(D.key,JSON.stringify(known))}catch(e){}};
 const el=(id)=>document.getElementById(id);
 const esc=(s)=>s.replace(/[&<>]/g,(c)=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])).replace(/\`([^\`]+)\`/g,'<b>$1</b>');
-// Gender colours: article of a noun, from "Nomen · der" in a Note cell or a leading article in column 1.
-const gen=(c)=>{const n=c.b.map((t)=>/^Nomen · (der|die|das)\b/.exec(t)||/^(der|die|das)\s/.exec(t)).find(Boolean);if(n)return n[1];const m=/^(der|die|das)\s/i.exec(c.f);return m?m[1].toLowerCase():""};
-const art=(h)=>h.replace(/^(Nomen · )?(der|die|das)\b(?![/])/,(m,a,b)=>(a||'')+'<span class="a-'+b+'">'+b+'</span>');
 const unknown=()=>ALL.map((_,k)=>k).filter((k)=>!known[ALL[k].f]);
 el('revlab').textContent=LAB[0]+' zuerst';
 const HR='<hr style="width:100%;border:0;border-top:1px solid var(--line);margin:16px 0">';
@@ -17,7 +14,7 @@ function stats(){
 }
 function drawTable(){
   const th=D.head.concat(['Bekannt']).map((h)=>'<th>'+esc(h)+'</th>').join('');
-  const body=ALL.map((c,k)=>'<tr>'+[c.f].concat(c.b).map((t,i)=>'<td>'+(i===0&&gen(c)?'<span class="a-'+gen(c)+'">'+esc(t)+'</span>':art(esc(t)))+'</td>').join('')+'<td class="chk"><input type="checkbox" data-i="'+k+'"'+(known[c.f]?' checked':'')+' aria-label="Bekannt"></td></tr>').join('');
+  const body=ALL.map((c,k)=>'<tr>'+[c.f].concat(c.b).map((t,i)=>'<td>'+esc(t)+'</td>').join('')+'<td class="chk"><input type="checkbox" data-i="'+k+'"'+(known[c.f]?' checked':'')+' aria-label="Bekannt"></td></tr>').join('');
   el('tbl').innerHTML='<table><thead><tr>'+th+'</tr></thead><tbody>'+body+'</tbody></table>';
 }
 function draw(){
@@ -25,8 +22,8 @@ function draw(){
   if(table)return;
   if(cur<0){el('card').innerHTML='<div class="front">'+(ALL.length&&!unknown().length?'Alle Wörter gewusst':'Keine Karten')+'</div>';return}
   const c=ALL[cur],rev=el('rev').checked;
-  const front='<div class="front'+(flip&&gen(c)?' a-'+gen(c):'')+'">'+esc(c.f)+'</div>';
-  const back='<div class="back">'+c.b.map((t,k)=>t?'<p><span class="lab">'+esc(LAB[k])+'</span>'+art(esc(t))+'</p>':'').join('')+'</div>';
+  const front='<div class="front">'+esc(c.f)+'</div>';
+  const back='<div class="back">'+c.b.map((t,k)=>t?'<p><span class="lab">'+esc(LAB[k])+'</span>'+esc(t)+'</p>':'').join('')+'</div>';
   const alt='<div class="front" style="font-size:22px;font-weight:500">'+esc(c.b[0])+'</div>';
   el('card').innerHTML=flip?front+HR+back:(rev?alt:front);
 }
